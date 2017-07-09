@@ -1,0 +1,9 @@
+.social-links {
+  margin-bottom: 25px;
+}
+@media (min-width: $desktop-width) {
+  .social-links {
+    padding-right: 81px;
+    padding-top: 8px;
+  }
+}

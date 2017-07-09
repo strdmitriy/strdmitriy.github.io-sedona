@@ -1,0 +1,167 @@
+.menu {
+  width: auto;
+  text-align: center;
+}
+
+.menu__list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  font-size: 0;
+}
+
+.menu__item {
+  display: block;
+  padding: 7px 0;
+
+  background-color: $bg-menu;
+  border-bottom: 1px solid #678fa8;
+  list-style: none;
+
+  &:hover {
+    background: #669ec0;
+    color: $txt-general-secondary;
+    transition: ease-in-out 0.25s;
+  }
+
+  &:active {
+    background: #5496bd;
+    color: #88b6d1;
+    transition: ease-in-out 0.25s;
+  }
+}
+
+.menu__link {
+  display: block;
+  padding: 7px 0;
+
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+
+  text-align: center;
+  color: $txt-menu;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #f2f2f2;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .menu--visible {
+    display: none;
+  }
+  .menu__item {
+    padding: 0;
+
+    background-color: #81b3d2;
+
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+    }
+    &:last-child {
+      box-shadow: inset 0 -3px 11px rgba(0,0,0,.2);
+    }
+  }
+  .menu__link {
+    padding-right: 4px;
+
+    box-shadow: inset 0 -1px rgba(0,0,0,.2),inset 0 1px rgba(255,255,255,.2);
+    color: #ffffff;
+
+    &:hover {
+      color: #ffffff;
+      box-shadow: none;
+    }
+
+    &:active {
+      color: #88b6d1;
+      box-shadow: none;
+    }
+    &--first-shadow {
+      box-shadow: inset 0 -1px rgba(0,0,0,.2);
+    }
+    &--last-shadow {
+      box-shadow:
+        inset 0 1px rgba(255, 255 ,255 , 0.2);
+    }
+  }
+  .menu__link--active {
+    color: #ffffff;
+
+    &:hover {
+      color: #ffffff;
+      cursor: context-menu;
+    }
+
+    &:active {
+      color: #ffffff;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .menu__list {
+    text-align: center;
+  }
+  .menu__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    padding-top: 7px;
+    padding-bottom: 10px;
+
+    background: $bg-primary;
+    border-bottom: none;
+    color: $txt-general-primary;
+    text-align: center;
+
+    &:hover {
+      background: $bg-primary;
+      color: #81b3d2;
+    }
+
+    &:active {
+      background: $bg-primary;
+    }
+
+    &:nth-child(2) {
+      margin-right: 20%;
+    }
+  }
+  .menu__link {
+    color: $txt-general-primary;
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .menu__link--active {
+    color: #766357;
+
+    &:hover {
+      color: #604e43;
+      cursor: context-menu;
+    }
+
+    &:active {
+      color: #f2f2f2;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu__item {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}

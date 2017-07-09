@@ -1,0 +1,26 @@
+.logo {
+  position: absolute;
+  top: auto;
+  left: 50%;
+  z-index: 1;
+
+  width: 102px;
+  margin: 0 auto;
+
+  transform: translate(-50%);
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    transform: translate(-50%);
+  }
+}
+@media (min-width: $desktop-width) {
+  .logo {
+    width: 187px;
+  }
+}

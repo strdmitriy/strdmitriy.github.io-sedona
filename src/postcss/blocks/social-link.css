@@ -1,0 +1,31 @@
+.social-link {
+  display: inline-block;
+  vertical-align: middle;
+  width: 48px;
+  height: 48px;
+
+  line-height: 48px;
+  font-size: 0;
+
+  background-color: #81b3d2;
+  color: $txt-general-primary;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+}
+.social-link__svg {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  fill: #ffffff;
+
+  &:active {
+    fill: #88b6d1;
+  }
+}

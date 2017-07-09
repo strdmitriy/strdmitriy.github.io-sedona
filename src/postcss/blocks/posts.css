@@ -1,0 +1,19 @@
+.posts {
+  padding: 0 20px;
+  margin-bottom: 17px;
+}
+@media (min-width: $tablet-width) {
+  .posts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 60px;
+    padding: 0;
+  }
+}
+@media (min-width: $desktop-width) {
+  .posts {
+    margin: 0;
+    padding: 0;
+  }
+}

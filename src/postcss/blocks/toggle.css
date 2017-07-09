@@ -1,0 +1,79 @@
+@media (max-width: $mobile-width-only) {
+
+  .toggle {
+    position: absolute;
+    top: auto;
+    right: 0;
+    z-index: 2;
+
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    font-size: 0;
+
+    background-color: $bg-primary;
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+    &:hover {
+      background-color: $bg-primary;
+    }
+
+    &:active {
+      background-color: $bg-primary;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 17px;
+      left: 6px;
+
+      width: 25px;
+      height: 4px;
+
+      background-color: #678fa8;
+      box-shadow: 0 8px 0 0 #678fa8, 0 16px 0 0 #678fa8;
+    }
+  }
+  .toggle.toggle--opened {
+    top: -5px;
+    right: 0;
+    left: 250px;
+
+    background-color: transparent;
+
+    &::before, &::after {
+      content: "";
+      position: absolute;
+      top: 29px;
+      left: 24px;
+
+      width: 32px;
+      height: 5px;
+
+      background-color: rgba(255, 255, 255, 10);
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:active::before, &:active::after {
+      background-color: rgba(255, 255, 255, 10);
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .toggle {
+    display: none;
+  }
+}

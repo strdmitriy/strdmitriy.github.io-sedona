@@ -1,0 +1,15 @@
+.map {
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: $desktop-width) {
+  .map {
+    margin-bottom: 20px;
+  }
+}

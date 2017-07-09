@@ -1,0 +1,37 @@
+.copyright {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+
+  color: $txt-general-primary;
+}
+.copyright__logo-html {
+  transform: translate(5px, 15px);
+
+  &:hover {
+    fill: #81b3d2;
+  }
+
+  &:active {
+     fill: #b2b2b2;
+  }
+}
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 134px;
+    margin: 0;
+  }
+  .copyright__logo-html {
+    transform: translate(5px, 9px);
+  }
+}
+@media (min-width: $desktop-width) {
+  .copyright {
+    margin: 0;
+  }
+  .copyright__logo-html {
+    transform: translate(11px, 13px);
+  }
+}

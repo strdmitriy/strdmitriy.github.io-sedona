@@ -1,0 +1,33 @@
+.page-header__wrapper {
+  background: $bg-primary;
+  position: relative;
+}
+.page-header__media-wrapper {
+  min-height: 60px;
+}
+@media (max-width: $mobile-width-only) {
+  .page-header__wrapper--menu-nojs .toggle {
+    display: block;
+  }
+  .page-header__wrapper--menu-nojs .menu__wrapper {
+    position: static;
+    height: auto;
+  }
+  .page-header__wrapper--menu-nojs .menu__item {
+    display: block;
+  }
+  .page-header__wrapper--menu-opened {
+    min-height: 70px;
+  }
+  .page-header__wrapper--menu-nojs .menu {
+    display: block;
+  }
+}
+@media (min-width: $tablet-width) {
+  .page__header-wrapper {
+    position: static;
+  }
+  .page-header__media-wrapper {
+    min-height: 0;
+  }
+}
